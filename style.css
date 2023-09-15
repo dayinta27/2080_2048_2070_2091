@@ -1,0 +1,141 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+/* Gaya Container Utama */
+.custom-container {
+  display: flex;
+  width: 600px;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 1px 0px 20px 2px rgb(0, 0, 0, 0.4);
+}
+
+/* Gaya Bagian Kiri */
+.custom-left {
+  color: #fff;
+  padding: 20px;
+  width: 40%;
+  text-align: center;
+  border-radius: 20px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/* Gaya Bagian Kanan */
+.custom-right {
+  width: 50%;
+  padding: 20px;
+}
+
+.custom-left h4 {
+  text-align: center;
+}
+
+/* Gaya Skor Kiri */
+.custom-score-left {
+  padding: 50px;
+  width: 74px;
+  height: 74px;
+  border-radius: 100%;
+  box-shadow: inset 1px 1px 12px 0px hsla(256, 72%, 46%, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.custom-big-score {
+  color: #fff;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.custom-left h3 {
+}
+
+/* Gaya Skor Kanan */
+.custom-score-con {
+  display: flex;
+}
+
+.custom-score {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.custom-grey {
+  color: rgba(87, 87, 87, 0.992);
+}
+
+.custom-score-con img {
+  margin-right: 5px;
+}
+
+.custom-black-text {
+  color: #222;
+  font-weight: bold;
+}
+
+/* Gaya Skor Memory */
+.custom-score-memory {
+  color: hsl(39, 100%, 56%);
+  background: hsla(39, 100%, 56%, 0.1);
+}
+
+/* Gaya Skor Verbal */
+.custom-score-verbal {
+  color: hsl(166, 100%, 37%);
+  background: hsl(166, 100%, 37%, 0.1);
+}
+
+/* Gaya Skor Visual */
+.custom-score-visual {
+  color: hsl(234, 85%, 45%);
+  background: hsl(234, 85%, 45%, 0.1);
+}
+
+/* Gaya Tombol Lanjutkan */
+button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  border: none;
+  color: white;
+  outline: none;
+  background-color: hsl(224, 30%, 27%);
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Media Query untuk Layar Kecil */
+@media (max-width: 760px) {
+  .custom-left {
+    width: 100%;
+    padding: 0px;
+    border-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .custom-right {
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .custom-left-text {
+    padding: 20px;
+    text-align: center;
+  }
+  .custom-container {
+    width: 100%;
+    flex-direction: column;
+  }
+}
